@@ -1,0 +1,31 @@
+= form_for @setting do |f| 
+  %table
+    %tr
+      %td
+        boolean setting
+        = f.check_box :boolean_setting        
+    %tr
+      %td    
+        email
+        %br
+        = f.text_field :string_setting
+        %b{:style=>"color:red"}
+          =f.error_message_on :string_setting
+    %tr
+      %td
+        integer setting
+        %br
+        = f.text_field :integer_setting
+        %b{:style=>"color:red"}
+          =f.error_message_on :integer_setting
+          
+    %tr
+      %td
+        float setting
+        %br
+        = f.text_field :float_setting 
+        %b{:style=>"color:red"}
+          =f.error_message_on :float_setting
+    %tr
+      %td{:colspan=>2}
+        = f.submit

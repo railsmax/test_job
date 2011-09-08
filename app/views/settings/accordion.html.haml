@@ -1,0 +1,39 @@
+=javascript_include_tag 'jquery-1.6.2.min','accordion'
+
+%script{:type=>"text/javascript"}
+  Jq=$.noConflict();
+  Accordion('close','closable');
+  //Accordion('close');
+  //Accordion('open','closable');
+  
+=link_to "Settings", '/'
+%h2="Accordion" 
+%div{:id=>'accordion', :style=>'width:400px;'}
+  %p="Lorem ipsum"
+  %div{:class=>"content"}
+    %div
+      Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet.
+    %br
+    Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet.    
+  %p
+    Restaurants!
+    %br
+    %br
+    Delicious restaurants in downtown Toronto:
+  %div{:class=>"content"}
+    %ul
+      %li="Utopia"
+      %li="Gandhi's"
+      %li="Kom Jug Yuen"
+      %li="Tacos El Asador"
+      %li="Big Fat Burrito"
+  %p 
+    Bars!
+    %br
+    Get sloshed here: 
+  %div{:class=>"content"} 
+    %ul
+      %li="The Gem"
+      %li="Sneaky Dee's"
+      %li="Sweaty Betty's"
+      %li="Ronnie's Local 69"

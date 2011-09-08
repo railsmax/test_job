@@ -1,0 +1,16 @@
+login: &login
+  adapter: mysql2
+  username: root
+  
+###############
+
+development:
+  database: setting_development
+  <<: *login
+
+production:
+  database: setting_production
+  <<: *login
+test:
+  database: setting_test
+  <<: *login

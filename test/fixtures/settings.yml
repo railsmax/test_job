@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  boolean_setting: false
+  string_setting: MyString
+  integer_setting: 1
+  float_setting: 1.5
+
+two:
+  boolean_setting: false
+  string_setting: MyString
+  integer_setting: 1
+  float_setting: 1.5
